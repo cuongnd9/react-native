@@ -2,4 +2,4 @@
 
 > 🎯 Getting Started with React Native.
 
-![React Native](https://cdn-images-1.medium.com/max/1000/1*GkR93AAlILkmE_3QQf88Ug.png)
+![React Native](http://www.appcoda.com/wp-content/uploads/2015/04/react-native.png)

@@ -3,8 +3,9 @@ import { Image, Text, View, StyleSheet } from 'react-native';
 import Hoodie from '../assets/hoodie.png';
 
 export default function (props) {
+  const { category } = props;
   return <View style={styles.container}>
-    <Text style={styles.title}>Category Item</Text>
+    <Text style={styles.title}>{category.name}</Text>
     <Image source={Hoodie} style={styles.categoryImage} />
   </View>
 }
@@ -20,13 +21,15 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 0 },
-    marginBottom: 16
+    margin: 16,
+    marginTop: 8,
+    marginBottom: 8
   },
   title: {
     textTransform: 'uppercase',
     marginBottom: 8,
     fontWeight: "200",
-    fontSize: 25
+    fontSize: 23
   },
   categoryImage: {
     width: 64,

@@ -1,13 +1,20 @@
 import React from 'react';
-import { Image, Text, View, StyleSheet } from 'react-native';
+import { Image, Text, View, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import Hoodie from '../assets/hoodie.png';
 
 export default function (props) {
   const { category } = props;
-  return <View style={styles.container}>
-    <Text style={styles.title}>{category.name}</Text>
-    <Image source={Hoodie} style={styles.categoryImage} />
-  </View>
+  return (
+    <TouchableOpacity 
+      activeOpacity={0.3} 
+      onPress={() => Alert.alert('Success', 'Category is touched!')}
+    >
+      <View style={styles.container}>
+        <Text style={styles.title}>{category.name}</Text>
+        <Image source={Hoodie} style={styles.categoryImage} />
+      </View>
+    </TouchableOpacity>
+  );
 }
 
 const styles = StyleSheet.create({

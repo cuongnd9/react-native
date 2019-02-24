@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, ScrollView } from 'react-native';
+import { StyleSheet, View, ScrollView, FlatList } from 'react-native';
 
 import CategoryListItem from './components/CategoryListItem';
 
@@ -23,15 +23,15 @@ export default class App extends React.Component {
     const { categories } = this.state;
     return (
       <View style={styles.container}>
-        <ScrollView>
-          {categories.map(category => 
-            <CategoryListItem 
-              key={category.id} 
-              category={category} 
+        <FlatList 
+          data={categories} 
+          renderItem={({item}) => 
+            <CategoryListItem
+              category={item}
             />
-          )
           }
-        </ScrollView>
+          keyExtractor={item => `${item.id}`}
+        />
       </View>
     );
   }

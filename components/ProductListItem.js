@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
   price: {
     fontSize: 18,
     color: 'blue',
-    flex: 1
+    flex: 1,
+    alignItems: 'center'
   }
 });

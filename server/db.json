@@ -1,0 +1,62 @@
+{
+  "categories": [
+    { "id": 1, "name": "hoodie" },
+    { "id": 2, "name": "jacket" },
+    { "id": 3, "name": "underwear" },
+    { "id": 4, "name": "shoes" },
+    { "id": 5, "name": "skirt" },
+    { "id": 6, "name": "boots" },
+    { "id": 7, "name": "hat" }
+  ],
+  "products": [
+    {
+      "id": "15103418-66b9-4906-bfd4-fed1e5b39356",
+      "name": "Third Kit",
+      "price": 50,
+      "image": "https://images.sportsdirect.com/images/products/37738702_l.jpg",
+      "category": 2
+    }, {
+      "id": "6fd6c7f1-7e60-4797-a7e8-c53e8b2c5e22",
+      "name": "Third Kit",
+      "price": 30,
+      "image": "https://images.sportsdirect.com/images/products/37738702_l.jpg",
+      "category": 1
+    }, {
+      "id": "1368622f-0042-439b-aa56-8bf7d9fdde72",
+      "name": "Away Kit",
+      "price": 80,
+      "image": "https://images.sportsdirect.com/images/products/37738702_l.jpg",
+      "category": 4
+    }, {
+      "id": "b3bc8ad9-bda0-4f6a-98f1-7cc722ea2df6",
+      "name": "Away Kit",
+      "price": 80,
+      "image": "https://images.sportsdirect.com/images/products/37738702_l.jpg",
+      "category": 3
+    }, {
+      "id": "a71058bf-7027-4295-a04d-dec2aafb3074",
+      "name": "Away Kit",
+      "price": 60,
+      "image": "https://images.sportsdirect.com/images/products/37716208_l.jpg",
+      "category": 1
+    }, {
+      "id": "a60692bc-da3c-464a-8099-1627f4082177",
+      "name": "Away Kit",
+      "price": 60,
+      "image": "https://images.sportsdirect.com/images/products/37716208_l.jpg",
+      "category": 5
+    }, {
+      "id": "b1efff79-670d-4e53-a391-37ba02d9fe01",
+      "name": "Away Kit",
+      "price": 40,
+      "image": "https://images.sportsdirect.com/images/products/37716208_l.jpg",
+      "category": 2
+    }, {
+      "id": "63a5cf17-c8a2-4928-adce-449c0b1a329a",
+      "name": "Away Kit",
+      "price": 30,
+      "image": "https://images.sportsdirect.com/images/products/37716208_l.jpg",
+      "category": 7
+    }
+  ]
+}

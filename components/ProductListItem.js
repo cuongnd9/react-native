@@ -1,11 +1,8 @@
 import React from 'react';
 import { View, Text, Image, Button, StyleSheet } from 'react-native';
+import { AppContext } from '../contexts/AppContext';
 
 export default class extends React.Component {
-  handleOnPress() {
-    // TODO
-  }
-
   render() {
     const { product } = this.props;
     return (
@@ -14,10 +11,14 @@ export default class extends React.Component {
         <Text style={styles.title}>{product.name}</Text>
         <View style={styles.priceSession}>
           <Text style={styles.price}>${product.price}</Text>
-          <Button
-            onPress={this.handleOnPress.bind(this)}
-            title='Add To Cart'
-          />
+          <AppContext.Consumer>
+            {({addToCart}) => (
+              <Button
+                onPress={addToCart.bind(this, product)}
+                title='Add To Cart'
+              />
+            )}
+          </AppContext.Consumer>
         </View>
       </View>
     );

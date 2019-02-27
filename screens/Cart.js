@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, FlatList } from 'react-native';
+import { View, FlatList, StyleSheet } from 'react-native';
 import { AppContext } from '../contexts/AppContext';
 import CartListItem from '../components/CartListItem';
+import CartTotalPrice from '../components/CartTotalPrice';
 
 export default class extends Component {
   static navigationOptions = {
@@ -10,7 +11,7 @@ export default class extends Component {
 
   render() {
     return(
-      <View>
+      <View style={styles.container}>
         <AppContext.Consumer>
           {
             ({ cartItems }) => {
@@ -26,10 +27,21 @@ export default class extends Component {
                 />
               );
             }
-              
           }
         </AppContext.Consumer>
+        <CartTotalPrice style={styles.totalPrice} />
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingVertical: 8
+  },
+  totalPrice: {
+    position: 'absolute',
+    bottom: 0
+  }
+});

@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     padding: 16,
-    borderRadius: 4,
-    backgroundColor: '#fff',
+    borderRadius: 20,
+    backgroundColor: '#e8d3ff',
     elevation: 5,
     shadowColor: '#000',
     shadowOpacity: 0.3,

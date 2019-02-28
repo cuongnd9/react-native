@@ -1,4 +1,4 @@
-# simple-react-native
+# React Native Starter
 
 > ⚛️📱  Getting Started with React Native.
 
@@ -21,4 +21,4 @@ Run mobile
 
 ## License
 
-![](https://img.shields.io/github/license/cuongw/simple-react-native.svg?style=flat-square)
+![](https://img.shields.io/github/license/cuongw/react-native-starter.svg?style=flat-square)

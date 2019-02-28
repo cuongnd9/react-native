@@ -2,4 +2,23 @@
 
 > ⚛️📱  Getting Started with React Native.
 
-![React Native](http://www.appcoda.com/wp-content/uploads/2015/04/react-native.png)
+## Install   
+
+```
+➜ npm i
+```
+
+## Usage
+
+Run server
+```
+➜ npm run server
+```
+Run mobile
+```
+➜ npm start
+```
+
+## License
+
+![](https://img.shields.io/github/license/cuongw/simple-react-native.svg)

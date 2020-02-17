@@ -1,4 +1,4 @@
-# React Native Starter
+# React Native
 
 > ⚛️📱  Getting Started with React Native.
 
